@@ -5,7 +5,7 @@ import { version } from "../package.json";
 const manifest = defineManifest(async (env) => ({
   manifest_version: 3,
   name: `${env.mode === 'development' ? '[Dev] ' : ''}FileChangeCategorizer`,
-  description: 'Enhance your GitHub experience by automatically categorizing and labeling files based on predefined rules in commit histories and pull requests. Streamline your workflow and keep your repository organized with FileChangeCategorizer.',
+  description: 'Automatically categorize and label files in commit histories and pull requests based on predefined rules with FileChangeCategorizer.',
   version,
   background: {
     service_worker: 'background/index.ts',
