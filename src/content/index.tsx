@@ -7,7 +7,7 @@ import { Repository } from "@/types";
 import { ChromeEvent } from "@/types/event";
 import { LabelBucket, RepositoryBucket } from "@/types/storage";
 
-const PATTERN_FILE_CHANGE_PAGE = /^https:\/\/github\.com\/.*\/.*\/pull\/.*\/files.*$/;
+const PATTERN_FILE_CHANGE_PAGE = /^https:\/\/github\.com\/.*\/.*\/(pull\/.*\/files|commit).*$/;
 const SELECTOR_DIFF_FILES = ".Truncate > a";
 const SELECTOR_DIFF_FILE_HEADERS = "div[id^=diff-]";
 
