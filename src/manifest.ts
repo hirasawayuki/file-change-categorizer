@@ -16,7 +16,7 @@ const manifest = defineManifest(async (env) => ({
       js: ['content/index.tsx'],
     },
   ],
-  host_permissions: ['<all_urls>'],
+  host_permissions: ['https://github.com/*'],
   action: {
     default_popup: 'popup/popup.html',
     default_icon: {
