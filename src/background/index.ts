@@ -7,6 +7,9 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo) => {
       url: changeInfo.url,
     }
 
-    chrome.tabs.sendMessage(tabId, event)
+    const promise = chrome.tabs.sendMessage(tabId, event)
+    promise.catch(error => {
+      console.log(error)
+    })
   }
 });
